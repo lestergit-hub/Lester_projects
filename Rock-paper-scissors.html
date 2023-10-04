@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Rock Paper Scissors</title>
+        <h1>This is lester rock paper scissiors game!!!! Test test</h1>
+        <p>Pick your Hand</p>
+        <button onclick=" user_move = 'Rock';
+        ">Rock</button>
+        <button  onclick=" user_move ='Paper';
+        "
+        >Paper</button>
+        <button  onclick=" user_move = 'Scissor';
+        ">Scissor</button>
+        
+    </head>
+    <body>
+        <h3>Then</h2>
+        <p2>Click here to <button  onclick=" const randomNum = (parseInt(Math.random()*3)+1)
+        if(user_move === ''){
+            alert('You have pick nothing please pick something');
+        }
+        if(randomNum == 1){
+            computer_move = 'Rock';
+        }
+        if(randomNum == 2){
+            computer_move = 'Paper';
+        }
+        if(randomNum == 3){
+            computer_move = 'Scissor';
+        }
+
+        if( user_move === 'Rock'){
+            if(computer_move ==='Scissor'){
+                result = 'Win';
+            } else {
+                result = 'Lose';
+            }
+        }
+        if( user_move === 'Paper'){
+            if(computer_move ==='Rock'){
+                result = 'Win';
+            } else {
+                result = 'Lose';
+            }
+        }
+        if( user_move === 'Scissor'){
+            if(computer_move ==='Paper'){
+                result = 'Win';
+            } else {
+                result = 'Lose';
+            }
+        }
+        if( user_move === computer_move){
+            result = 'Tie'
+        }
+
+
+        alert(`You ${result} computer picked ${computer_move} and you picked ${user_move}` );
+        ">play</button></p2>
+        <script >
+        let computer_move ='';
+        let user_move='';
+        let result ='';
+        </script> 
+
+    </body>
+
+</html>
